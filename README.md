@@ -2,7 +2,25 @@
 
 ## Wstęp
 
-Nawet przy prostych proj
+**Potrzeba**:
+- Cofnąć się do starszej wersji.
+- Połączyć wersje rozwijane przez dwie różne osoby.
+- Spojrzeć do historii projektu.
+- Znaleźć moment w którym pojawił się błąd w projekcie.
+
+**Problem**: Zapisując pliki na komputerze mamy tylko najnowszą wersję.
+
+**Rozwiązanie**: System kontroli wersji (**V**ersion **C**ontrol **S**ystem)
+
+GIT - najpopularniejszy, obecnie używany system kontroli wersji
+
+Jest to szereg komend do wykorzystania w terminalu, które pomagają zarządzać wersjami projektu.
+
+Istnieją przeróżne narzędzia z interfejsem graficznym, które ułatwiają pracę na nim.
+
+## Nawigacja po katalogach
+
+
 
 jak nawigować po katalogach z poziom terminala
 jak operować (CRUD) na katalogach i plikach z poziom terminala
