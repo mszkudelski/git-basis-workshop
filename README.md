@@ -135,6 +135,10 @@ git commit # otwiera edytor
 git commit -m "opis zmian"
 ```
 
+Treść opisu commit'a powinna być:
+- jasna
+- zwięzła
+
 jak i kiedy zapisywać zmiany w repozytorium
 jak identyfikować obszary w gicie i do czego one służą (working directory, staging, repository)
 
@@ -147,8 +151,33 @@ jak identyfikować obszary w gicie i do czego one służą (working directory, s
 
 ## Gałęzie
 
+Branch (gałąź) pomaga prowadzić dwie równoległe historie.
+
+Branch wskazuje na konkretny commit (jest to wskaźnik)
+
+Dwa branche mogą wskazywać na ten sam commit. Wtedy ich historie są identyczne.
+
+
+
+``` bash
+git branch <nazwa-brancha> #tworzenie brancha
+git branch # listowanie branchy
+git checkout <nazwa-brancha> # przechodzenie na branch
+git checkout -b <nazwa-brancha> # stworzenie i przejście na branch - najprostszy sposób
+```
+
+Pierwszy branch to `main` lub `master`.
+
+Kolejne branche najczęściej nazywa się:
+- develop - wersja, gdzie pracują developerzy i testują testerzy
+- feature/opis-zadania - branche do codziennej pracy
+
+
+![Branches](branches.svg "Branches")
 
 jak i po co zakładać gałęzie i jak się między nimi przełączać
+
+
 czym jest detached HEAD
 czym jest merge i jak rozwiązać konflikt
 czym jest fast-forward merge, kiedy zachodzi i jak go uniknąć
