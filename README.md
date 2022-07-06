@@ -139,6 +139,12 @@ Treść opisu commit'a powinna być:
 - jasna
 - zwięzła
 
+Podglądanie listy commit'ów:
+```bash
+git log
+git log --oneline # pokazuje zwięzłą listę
+```
+
 jak i kiedy zapisywać zmiany w repozytorium
 jak identyfikować obszary w gicie i do czego one służą (working directory, staging, repository)
 
@@ -162,8 +168,11 @@ Dwa branche mogą wskazywać na ten sam commit. Wtedy ich historie są identycz
 ``` bash
 git branch <nazwa-brancha> #tworzenie brancha
 git branch # listowanie branchy
+
 git checkout <nazwa-brancha> # przechodzenie na branch
 git checkout -b <nazwa-brancha> # stworzenie i przejście na branch - najprostszy sposób
+
+git checkout - # cofa do ostatniego miejsca
 ```
 
 Pierwszy branch to `main` lub `master`.
@@ -175,9 +184,64 @@ Kolejne branche najczęściej nazywa się:
 
 ![Branches](branches.svg "Branches")
 
+TODO zadanie
+
 jak i po co zakładać gałęzie i jak się między nimi przełączać
 
+## Wskaźnik HEAD
+
+HEAD wskazuje gdzie aktualnie się znajdujemy. 
+
+HEAD może być tożsamy z danym branchem.
+
+HEAD może wskazywać na dowolny commit w historii - wtedy mówimy o `detached HEAD`
+
+HEAD możemy sprawdzić za pomocą `git log`.
+
+
+HEAD wskazuje na branch:
+![HEAD](head.png "HEAD")
+
+
+HEAD wskazuje na commit bez brancha:
+![Detached HEAD](head2.png "Detached HEAD")
+
+Tworzenie detached HEAD:
+```bash
+git checkout <hash commita>
+```
+
+Naprawianie detached HEAD:
+```bash
+git checkout <nazwa brancha>
+
+git checkout - # tylko jeśli zrobiliśmy jeden checkout wcześniej
+```
+
+Możemy też utworzyć rozgałęzienie z detached HEAD:
+```bash
+git checkout <hash commita>
+git checkout -b <nazwa nowego brancha>
+```
+
+![Detached HEAD](head3.png "Detached HEAD")
 
 czym jest detached HEAD
+
+## Łączenie gałęzi
+
+Prędzej czy później musimy scalić dwie osobne wersje projektu.
+
+```bash
+git merge <nazwa brancha>
+```
+
+```bash
+git checkout main
+git merge feature/1
+```
+Mergujemy `feature/1` do `main`, więc na `main` są wszystkie commity z `feature/1`. Ale na `feature/1` mogą nie być wszystkie commity z `main`.
+
 czym jest merge i jak rozwiązać konflikt
-czym jest fast-forward merge, kiedy zachodzi i jak go uniknąć
+
+TODO czym jest fast-forward merge, kiedy zachodzi i jak go uniknąć
