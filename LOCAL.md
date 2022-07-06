@@ -242,6 +242,10 @@ git merge feature/1
 ```
 Mergujemy `feature/1` do `main`, więc na `main` są wszystkie commity z `feature/1`. Ale na `feature/1` mogą nie być wszystkie commity z `main`.
 
+### Konflikty
+
+Często okazuje się przy merge'u, że historie z dwóch gałęzi się wzajemnie wykluczają.
+
 czym jest merge i jak rozwiązać konflikt
 
 TODO czym jest fast-forward merge, kiedy zachodzi i jak go uniknąć
