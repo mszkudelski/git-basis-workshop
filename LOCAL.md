@@ -184,7 +184,16 @@ Kolejne branche najczęściej nazywa się:
 
 ![Branches](branches.svg "Branches")
 
-TODO zadanie
+Możemy porównać gałęzie za pomocą:
+``` bash
+git diff <nazwa brancha>
+```
+
+### Zadanie
+
+1. Utwórz gałąź `feature/change`
+2. Wykonaj i zacommituj jakąś zmianę
+3. Porównaj z branchem `main`
 
 jak i po co zakładać gałęzie i jak się między nimi przełączać
 
@@ -242,10 +251,31 @@ git merge feature/1
 ```
 Mergujemy `feature/1` do `main`, więc na `main` są wszystkie commity z `feature/1`. Ale na `feature/1` mogą nie być wszystkie commity z `main`.
 
+### Zadanie
+
+1. Dociągnij zmiany z `feature/changes` do `main`.
+2. Wróć na feature branch.
+3. Porównaj teraz te dwa branche.
+
 ### Konflikty
 
 Często okazuje się przy merge'u, że historie z dwóch gałęzi się wzajemnie wykluczają.
 
+Do konfliktu dochodzi jeśli ta sama linijka kodu została zmieniona na dwóch gałęziach.
+
+Konfilkty najlepiej rozwiązywać w edytorze.
+
+### Zadanie
+
+1. Utwórz nowy branch z `main`.
+2. Utwórz plik `conflict.txt` z treścią `zmiany`
+3. Utwórz kolejny branch z `main`.
+4. Utwórz plik `conflict.txt` z treścią `inne zmiany`.
+5. Spróbuj połączyć te dwie gałęzie.
+6. Rozwiąż konflikty w VSC
+
 czym jest merge i jak rozwiązać konflikt
+
+### Łączenie strategią Fast-formard
 
 TODO czym jest fast-forward merge, kiedy zachodzi i jak go uniknąć
