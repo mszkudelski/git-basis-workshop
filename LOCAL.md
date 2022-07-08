@@ -18,7 +18,6 @@ Jest to szereg komend do wykorzystania w terminalu, które pomagają zarządzać
 
 Istnieją przeróżne narzędzia z interfejsem graficznym, które ułatwiają pracę na nim.
 
-
 Git to CLI (Command Line Interface). Jest to "przeciwieństwo" interfejsu graficznego. Wszystki operacje wykonuje się w konsoli (wierzu poleceń - command line)
 
 ## Nawigacja po katalogach w konsoli
@@ -44,9 +43,6 @@ W konsoli/terminalu możemy robić takie same operacje na plikach jak w narzędz
 4. Przejdź do tego katalogu.
 5. Wyświetl obecną ścieżkę.
 
-jak nawigować po katalogach z poziom terminala
-jak operować (CRUD) na katalogach i plikach z poziom terminala
-
 ## Konfiguracja Gita
 
 ``` bash
@@ -67,8 +63,6 @@ Główny folder naszego projektu.
 Jest kontrolowany całkowicie przez Gita.
 
 Info, które potrzebuje Git jest w ukrytym folderze `.git`.
-
-jak założyć repozytorium lokalne
 
 ### Tworzenie repo
 
@@ -148,9 +142,6 @@ git log
 git log --oneline # pokazuje zwięzłą listę
 ```
 
-jak i kiedy zapisywać zmiany w repozytorium
-jak identyfikować obszary w gicie i do czego one służą (working directory, staging, repository)
-
 ### Zadanie
 
 1. Dodaj aktualne zmiany do staging area.
@@ -165,8 +156,6 @@ Branch (gałąź) pomaga prowadzić dwie równoległe historie.
 Branch wskazuje na konkretny commit (jest to wskaźnik)
 
 Dwa branche mogą wskazywać na ten sam commit. Wtedy ich historie są identyczne.
-
-
 
 ``` bash
 git branch <nazwa-brancha> #tworzenie brancha
@@ -197,8 +186,6 @@ git diff <nazwa brancha>
 1. Utwórz gałąź `feature/change`
 2. Wykonaj i zacommituj jakąś zmianę
 3. Porównaj z branchem `main`
-
-jak i po co zakładać gałęzie i jak się między nimi przełączać
 
 ## Wskaźnik HEAD
 
@@ -237,8 +224,6 @@ git checkout -b <nazwa nowego brancha>
 ```
 
 ![Detached HEAD](head3.png "Detached HEAD")
-
-czym jest detached HEAD
 
 ## Łączenie gałęzi
 
@@ -281,12 +266,7 @@ Konfilkty najlepiej rozwiązywać w edytorze.
 5. Spróbuj połączyć te dwie gałęzie.
 6. Rozwiąż konflikty w VSC
 
-czym jest merge i jak rozwiązać konflikt
-
 ### Łączenie strategią Fast-formard
-
-
-TODO czym jest fast-forward merge, kiedy zachodzi i jak go uniknąć
 
 Jeśli chcemy dociągnąć feature branch do np. do `main`, a w między czasie na `main` nie pojawiły się zmiany, to zachodzi fast-forward merge. 
 
