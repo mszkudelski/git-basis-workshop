@@ -181,6 +181,15 @@ Możemy porównać gałęzie za pomocą:
 git diff <nazwa brancha>
 ```
 
+Kiedy branch już nie będzie nam potrzebny, to można go usunąć:
+``` bash
+git branch -d <nazwa brancha>
+```
+
+> **Uwaga**
+>
+> Musimy znajdować się na innym branchu
+
 ### Zadanie
 
 1. Utwórz gałąź `feature/change`
@@ -280,3 +289,12 @@ Można zapobiec temu:
 ```bash
 git merge --no-ff <branch>
 ```
+
+## Zadanie
+
+Plik `TASK-LOCAL.md`.
+
+## Zadanie domowe
+
+Ustawienie kluczy SSH do komunikacji ze zdalnym repo na Githubie
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh
