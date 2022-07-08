@@ -15,6 +15,7 @@ Github (najpopularniejszy), Gitlab, Bitbucket...
 1. Możliwość współpracy z innymi.
 2. Kopię zapasową projektu.
 
+
 ## Rozpoczęcie pracy ze zdalnym repo
 
 Są dwie drogi:
@@ -47,6 +48,40 @@ Sprawdzenie zdalnych repo:
 ```bash
 git remote -v
 ```
+
+## Praca z Githubem
+
+Github udostępnia bardzo dużo opcji do zarządzania kodem projektu.
+
+### Tworzenie i klonowanie repo
+
+Przede wszystkim możemy tworzyć i pobierać repozytoria z poziomu Githuba.
+
+Alternatywa do podłączania zdalnego repo:
+1. Tworzymy repo w Githubie
+2. Klonujemy je. Możemy to zrobić na dwa sposoby - ssh, https (wymaga loginu i hasła)
+```bash
+git clone <opcjonalna nazwa origina> git@github.com:organizacja/repo.git
+```
+
+### Pull Requesty
+
+Główną z nich są Pull Requesty.
+
+Dzięki nim sygnalizujemy chęć domergowania zmian.
+
+Cel:
+- komunikacja z zespołem
+- wymiana wiedzy
+- sprawdzanie kodu (code review)
+- uruchomienie procesu sprawdzania kodu
+
+### Edycja plików
+
+Możemy nanosić zmiany i commitować bezpośrednio w Githubie. 
+
+Nie jest to zbyt praktyczne w codziennej pracy.
+
 
 ## Praca ze zdalnym repo
 
@@ -100,16 +135,3 @@ git pull # jeśli mamy upstream analogicznie do `git push`
 2. Zacommituj zmiany.
 3. Pobierz te zmiany.
 
-## Praca z Githubem
-
-Github udostępnia bardzo dużo opcji do zarządzania kodem projektu.
-
-Główną z nich są Pull Requesty.
-
-Dzięki nim sygnalizujemy chęć domergowania zmian.
-
-Cel:
-- komunikacja z zespołem
-- wymiana wiedzy
-- sprawdzanie kodu (code review)
-- uruchomienie procesu sprawdzania kodu

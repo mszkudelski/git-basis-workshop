@@ -111,7 +111,7 @@ Trzeba zawsze wykonać 2 kroki, żeby zapisać zmiany w repo.
 
 Working directory - to co aktualnie widzimy w repo, wszystkie niezapisane zmiany
 
-Stating area - zmiany oczekujące na zapisanie
+Staging area - zmiany oczekujące na zapisanie
 
 Repository - wszystkie zapisane zmiany
 
@@ -119,7 +119,10 @@ Repository - wszystkie zapisane zmiany
 
 > Nawet cały folder może się zupełnie różnić pomiędzy tymi obszarami
 
-TODO wymyśleć dobrzy przykład z życia
+Ten proces jest trochę jak pisanie książki:
+1. Robimy luźne notatki, zbieramy materiały (working directory)
+2. Potem piszemy już konkretny tekst. (staging area)
+3. Oddajemy cały rozdział do przejrzenia (Repository)
 
 Dodanie zmiany do staging area:
 ``` bash
@@ -251,6 +254,10 @@ git merge feature/1
 ```
 Mergujemy `feature/1` do `main`, więc na `main` są wszystkie commity z `feature/1`. Ale na `feature/1` mogą nie być wszystkie commity z `main`.
 
+Zazwyczaj łączenie gałęzi tworzy tzw. Merge Commit.
+
+![After 3way](after-3way.svg "After 3way")
+
 ### Zadanie
 
 1. Dociągnij zmiany z `feature/changes` do `main`.
@@ -278,4 +285,18 @@ czym jest merge i jak rozwiązać konflikt
 
 ### Łączenie strategią Fast-formard
 
+
 TODO czym jest fast-forward merge, kiedy zachodzi i jak go uniknąć
+
+Jeśli chcemy dociągnąć feature branch do np. do `main`, a w między czasie na `main` nie pojawiły się zmiany, to zachodzi fast-forward merge. 
+
+![Before FF](before-ff.svg "Before FF")
+
+Wskaźnik `main` jest po prostu zrównany ze wskaźnikiem feature brancha.
+
+Nie powstaje nowy Merge Commit.
+
+Można zapobiec temu:
+```bash
+git merge --no-ff <branch>
+```
