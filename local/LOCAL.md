@@ -1,5 +1,25 @@
 # Git - praca z lokalnym repozytorium 
 
+## O mnie
+
+Marek Szkudelski
+- Senior Frontend Developer w Teb Akademia
+- 5+ lat doświadczenia
+- 10+ lat nauki programowania
+- mąż, ojciec, miłośnik muzyki i gitary
+- https://blog.szkudelski.dev
+
+## Agenda
+
+1. Krótkie przedstawienie się.
+2. Teoria.
+3. Zadanie praktyczne.
+4. Przerwa gdzieś w środku :)
+
+> Mała uwaga
+>
+> Tak, to już było w preworku.
+
 ## Wstęp
 
 **Potrzeba**:
@@ -18,22 +38,24 @@ Jest to szereg komend do wykorzystania w terminalu, które pomagają zarządzać
 
 Istnieją przeróżne narzędzia z interfejsem graficznym, które ułatwiają pracę na nim.
 
-Git to CLI (Command Line Interface). Jest to "przeciwieństwo" interfejsu graficznego. Wszystki operacje wykonuje się w konsoli (wierzu poleceń - command line)
+Git to CLI (Command Line Interface). Jest to "przeciwieństwo" interfejsu graficznego. Wszystkie operacje wykonuje się w konsoli (wierszu poleceń - command line)
 
 ## Nawigacja po katalogach w konsoli
 
 W konsoli/terminalu możemy robić takie same operacje na plikach jak w narzędziu graficznym.
 
-- pwd - print working directory
-- mkdir - make directory
-- touch - create empty file
-- ls - list
-- cd <ścieżka> - change directory
-- . - obecna ścieżka
-- .. - poziom wyżej
-- ./project - folder desktop zaczynając od obecnej ścieżki
-- ~/ - ścieżka zaczynająca od katalogu domowego
-- / - ścieżka absolutna
+
+- `pwd` - print working directory
+- `mkdir` - make directory (`md` na windows)
+- `touch` - create empty file
+- `echo "text" >> <plik>` - tworzenie pliku z treścią (działa na windows)
+- `ls` - list (`dir` na windows)
+- `cd <ścieżka>` - change directory
+- `.` - obecna ścieżka
+- `..` - poziom wyżej
+- `./project` - folder desktop zaczynając od obecnej ścieżki
+- `~/` - ścieżka zaczynająca od katalogu domowego
+- `/` - ścieżka absolutna
 
 ### Zadanie
 
@@ -101,7 +123,7 @@ git diff
 
 Trzeba zawsze wykonać 2 kroki, żeby zapisać zmiany w repo.
 
-![Proces zapisu zmian](git-process2.png "Proces zapisu zmian")
+![Proces zapisu zmian](images/git-process2.png "Proces zapisu zmian")
 
 Working directory - to co aktualnie widzimy w repo, wszystkie niezapisane zmiany
 
@@ -174,7 +196,7 @@ Kolejne branche najczęściej nazywa się:
 - feature/opis-zadania - branche do codziennej pracy
 
 
-![Branches](branches.svg "Branches")
+![Branches](images/branches.svg "Branches")
 
 Możemy porównać gałęzie za pomocą:
 ``` bash
@@ -208,11 +230,11 @@ HEAD możemy sprawdzić za pomocą `git log`.
 
 
 HEAD wskazuje na branch:
-![HEAD](head.png "HEAD")
+![HEAD](images/head.png "HEAD")
 
 
 HEAD wskazuje na commit bez brancha:
-![Detached HEAD](head2.png "Detached HEAD")
+![Detached HEAD](images/head2.png "Detached HEAD")
 
 Tworzenie detached HEAD:
 ```bash
@@ -232,7 +254,7 @@ git checkout <hash commita>
 git checkout -b <nazwa nowego brancha>
 ```
 
-![Detached HEAD](head3.png "Detached HEAD")
+![Detached HEAD](images/head3.png "Detached HEAD")
 
 ## Łączenie gałęzi
 
@@ -250,7 +272,7 @@ Mergujemy `feature/1` do `main`, więc na `main` są wszystkie commity z `featur
 
 Zazwyczaj łączenie gałęzi tworzy tzw. Merge Commit.
 
-![After 3way](after-3way.svg "After 3way")
+![After 3way](images/after-3way.svg "After 3way")
 
 ### Zadanie
 
@@ -279,7 +301,7 @@ Konfilkty najlepiej rozwiązywać w edytorze.
 
 Jeśli chcemy dociągnąć feature branch do np. do `main`, a w między czasie na `main` nie pojawiły się zmiany, to zachodzi fast-forward merge. 
 
-![Before FF](before-ff.svg "Before FF")
+![Before FF](images/before-ff.svg "Before FF")
 
 Wskaźnik `main` jest po prostu zrównany ze wskaźnikiem feature brancha.
 
