@@ -316,7 +316,17 @@ git merge --no-ff <branch>
 
 Plik `TASK-LOCAL.md`.
 
+> Cheatsheet
+>
+> https://github.com/joshnh/Git-Commands
+
 ## Zadanie domowe
 
 Ustawienie kluczy SSH do komunikacji ze zdalnym repo na Githubie
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+
+## Materiały dodatkowe
+
+1. Prework :)
+2. Materiały z tych warszatów na Githubie
+3. https://www.atlassian.com/git
