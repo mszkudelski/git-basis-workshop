@@ -1,19 +1,12 @@
 # Zadanie - książka
 
-Piszemy książkę o HTML w markdown (plik z rozszerzeniem `.md`)
-
-> Podstawy o składni markdown
->
-> https://www.markdownguide.org/basic-syntax/
->
-> Tak naprawdę potrzebujemy tylko nagłówki oraz akapity.
+Piszemy książkę o dowolnej tematyce w plikach tekstowych (plik z rozszerzeniem `.txt`)
 
 ## Zadanie 1 
 
-1. Utwórz repozytorium i dodaj do niego pusty plik markdown.
-2. Następnie wykorzystaj poniższą dokumentację, żeby napisać wstęp książki oraz 2 krótkie rozdziały (możesz dosłownie przekleić treść).
-https://developer.mozilla.org/pl/docs/Learn/HTML
-3. Treści najwygodniej będzie Ci dodać przez VSC.
+1. Utwórz repozytorium i dodaj do niego pusty plik txt.
+2. Następnie wykorzystaj poniższą dokumentację, żeby napisać wstęp książki oraz 2 krótkie rozdziały (możesz dosłownie przekleić treść z internetu).
+3. Treści najwygodniej będzie Ci dodać przez edytor tekstu (np. notatnik, notepad).
 > Pamiętaj, żeby te zmiany dodać do repo!
 
 ## Zadanie 2
