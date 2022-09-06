@@ -26,7 +26,7 @@ Piszemy książkę o dowolnej tematyce w plikach tekstowych (plik z rozszerzenie
 1. Na nowym branchu usuń pierwszy rozdział.
 2. Domerguj ten branch do `main`.
 3. Następnie domerguj do `main` branch z zadania 3.
-4. Rozwiąż konflikty w VSC.
+4. Rozwiąż konflikty w edytorze tekstu.
 5. Usuń oba branche.
 
 ## Rozwiązania zadań 
