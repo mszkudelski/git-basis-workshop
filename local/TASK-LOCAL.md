@@ -5,7 +5,7 @@ Piszemy książkę o dowolnej tematyce w plikach tekstowych (plik z rozszerzenie
 ## Zadanie 1 
 
 1. Utwórz repozytorium i dodaj do niego pusty plik txt.
-2. Następnie wykorzystaj poniższą dokumentację, żeby napisać wstęp książki oraz 2 krótkie rozdziały (możesz dosłownie przekleić treść z internetu).
+2. Następnie wykorzystaj dowolne źródło, żeby napisać wstęp książki oraz 2 krótkie rozdziały (możesz dosłownie przekleić treść z internetu).
 3. Treści najwygodniej będzie Ci dodać przez edytor tekstu (np. notatnik, notepad).
 > Pamiętaj, żeby te zmiany dodać do repo!
 
